@@ -27,6 +27,13 @@ class ProyectoModel
         $consulta->closeCursor();
     }
 
+    public function registrarPokemon($nombre, $tipo, $peso, $altura)
+    {
+        $consulta = $this->db->prepare("call sp_registrar_pokemon(?, ?, ?, ?)");
+        $consulta->execute([$nombre, $tipo, $peso, $altura]);
+        $consulta->closeCursor();
+    }
+
     public function eliminarProyecto($nombre)
     {
 

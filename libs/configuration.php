@@ -3,7 +3,7 @@
     $config= Config::singleton();
     
     $config->set('dbhost', 'localhost'); // ip
-    $config->set('dbname', 'db_lab_mvc_php');
+    $config->set('dbname', 'db_lab_5');
     $config->set('dbuser', 'root');
     $config->set('dbpass', '');
     
