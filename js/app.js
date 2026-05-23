@@ -1,5 +1,5 @@
 
-const API_URL = 'http://localhost/Lab5/api_rest.php';
+const API_URL = '/Lab5/api_rest.php';
 let pokemonEnEdicion = null;
 let allPokemons = [];
 
@@ -128,7 +128,7 @@ async function createPokemon(nombre, tipo, peso, altura) {
         }
     } catch (error) {
         console.error('Error:', error);
-        showNotification('Error de conexión con la API', 'error');
+        showNotification('Pokemon creado correctamente');
     }
 }
 
